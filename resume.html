@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Curriculum Vitae</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<style>
+html{ 
+    overflow:hidden;
+}
+body{
+	margin:0px;
+	padding:0px;
+	background:rgb(230,230,230);
+}
+header{
+	position:absolute; 
+	width:100%;
+	height:60px;
+	background:rgb(201,201,201);
+	box-shadow:0px 0PX 5px;
+}
+header>p, header>h1{
+	position:absolute;
+	top:0;
+	left:0;
+	line-height:60px;
+}
+header>p{
+	width:40%;
+	text-align:center;
+}
+header>h1{
+	width:100%;
+}
+h1, h2{
+	text-align:center; 
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+p, h3{
+	margin:0px;
+}
+#details{
+	position:absolute;
+	top:60px;
+	left:0;
+	bottom:0;
+	width:100%;
+	background:rgba(251,245,231,0.8);
+	overflow:hidden;
+}
+#d1, #d2, #d3, #d4{
+	position:absolute;
+	height:200px;
+	width:200px;
+	border-radius:50%;
+	-webkit-transition:all 1s;
+	-o-transition:all 1s;
+	transition:all 1s;
+	margin-left:-100px;
+}
+#d2, #d3, #d4{
+	 border-radius:50%;
+}
+.unselected_detail{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#d1{
+	background:rgb(197,255,108);
+	border-radius:0;
+	opacity:0;
+}
+body>div>div>div{
+	margin:auto;
+}
+body>div h2{
+	line-height:3em;
+}
+#d2{
+	background:rgb(108,255,185);
+	border-color:rgba(148,255,225,0.6);
+}
+#d3{
+	background:rgb(108,141,255);
+	border-color:rgba(128,161,255,0.6);
+}
+#d4{
+	background:rgb(255,108,244);
+	border-color:rgba(255,181,255,0.6);
+}
+#details p, #details h3{
+	visibility:hidden;
+	height:0px;
+}
+#details h2{
+	top:auto;
+}
+#content{
+	position:absolute;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	text-align:left;
+	z-index:10;
+	background:rgb(197,255,108);
+}
+#content::-webkit-scrollbar {
+    width:4px;
+}
+ 
+#content::-webkit-scrollbar-track {
+    -webkit-box-shadow:0 0 6px rgba(200,200,200,0.3);
+}
+ 
+#content::-webkit-scrollbar-thumb {
+  background-color: rgba(250,250,250,0.5);
+  border-radius:2px;
+}
+#content h1{
+	margin:0px;
+	padding:0px;
+	line-height:100%;
+}
+@keyframes Anime{
+	0% {border-width:0px;bottom:40px;margin-left:-100px;}
+	40% {border-width:20px;bottom:20px;margin-left:-120px;}
+	100% {border-width:0px;bottom:40px;margin-left:-100px;}
+}
+@-webkit-keyframes Anime{
+	0% {border-width:0px;bottom:40px;margin-left:-100px;}
+	40% {border-width:20px;bottom:20px;margin-left:-120px;}
+	100% {border-width:0px;bottom:40px;margin-left:-100px;}
+}
+@-moz-keyframes Anime{
+	0% {border-width:0px;bottom:40px;margin-left:-100px;}
+	40% {border-width:20px;bottom:20px;margin-left:-120px;}
+	100% {border-width:0px;bottom:40px;margin-left:-100px;}
+}
+.not_viewed{
+	animation-name:Anime;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:Anime;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function:ease-in;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:Anime;
+	-moz-animation-duration:1s;
+	-moz-animation-timing-function:ease-in-out;
+	-moz-animation-iteration-count:infinite;
+	border-style:solid;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+	<p>Full Name:</p> 
+	<h1>Yuxun Ling</h1>
+</header>
+
+<div id='details'>
+	<div id="content">
+    	<div>
+        	<h2 style="line-height:100px; margin-top:50px;">basic information</h2>
+			<h3 style="visibility:visible;height:auto;">Email: <a href="mailto:lingyuxun@hotmail.com">lingyuxun@hotmail.com</a></h3>
+			<br>
+			<h3 style="visibility:visible;height:auto;">Phone:<a href="tel:+447507306767"> 07507306767</a></h3>
+			<br>
+			<h3 style="visibility:visible;height:auto;">GitHub: <a href="https://github.com/lingyx97" target="_blank">https://github.com/lingyx97</a></h3>
+			<br>
+			<h3 style="visibility:visible;height:auto;">LinkedIn: <a href="https://uk.linkedin.com/in/yuxun-ling-b90758112" target="_blank">yuxun ling</a></h3>
+
+		</div>  
+    </div>
+	<div id='d1' class="selected_detail">
+		<div>
+        	<h2 style="line-height:100px; margin-top:50px;">basic information</h2>
+			<h3>Email: <a href="mailto:lingyuxun@hotmail.com">lingyuxun@hotmail.com</a></h3><br>
+
+			<h3>Phone: <a href="tel:+447507306767">07507306767</a></h3><br>
+
+			<h3>GitHub: <a href="https://github.com/lingyx97" target="_blank">lingyx97</a></h3><br>
+
+			<h3>LinkedIn: <a href="https://uk.linkedin.com/in/yuxun-ling-b90758112" target="_blank">yuxun ling</a></h3>
+		</div>  
+    </div>
+
+	<div id="d2" class="unselected_detail not_viewed">
+
+		<div>
+			<h2 style="line-height:100px; margin-top:50px;">Projects</h2>
+			<div>
+				<h3>Investigating factors that could affect the subway ridership in NYC</h3><br>
+
+				<p>link:<a href='https://docs.google.com/document/d/1PZQ-sWbbLLNA4as70ZrpdQ6Fui_X-9fL3uQSb5wVxpU/edit?usp=sharing' target="_blank">Google Doc</a> (answers correspond to questions from: <a href="https://docs.google.com/document/d/16T3kirC0IxvtfxlZb7n5kOz5xFF_JTwrG31J2OZj8KM/pub?embedded=True" target="_blank">another Google Doc</a>)<br>Technology used: Python (numpy, pandas, statsmodels, and pandas)</p>
+			</div><br>
+
+			<div>
+				<h3>Cleaning and analyzing OpenStreetMap data for London</h3><br>
+
+				<p>link:<a href='https://github.com/lingyx97/Anal_OSM' target="_blank">Github</a><br>Technology used: Python (mainly pymongo and cElementTree)</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="d3" class="unselected_detail not_viewed">
+		<div>
+			<h2 style="line-height:50px; margin-top:50px;">Skills</h2>
+			<h3>Programming Languages: Matlab, Python, Javascript+HTML+CSS</h3>
+			<h3>Databases: MongoDB, SQLite<br></h3>
+			<h2 style="line-height:50px;">Education</h2>
+			<h3>Undergraduate: Oxford University, Mathematics, will graduate at 2017 (Bachelor) or 2018 (Master). First year result: First Class.</h3>
+			<h3>Masters/PhD (if applicable): N/A</h3>
+			<h3>Nanodegree: Udacity Data Analyst (supposed to be finished in June or July 2016)</h3>
+		</div>
+	</div>
+    
+	<div id="d4" class="unselected_detail not_viewed">
+		<div>
+			<h2 style="line-height:50px; margin-top:50px;">Interests</h2>
+			<h3>My interests are: Data Analysis, Front-end Web development<br></h3>
+			<h2 style="line-height:50px;">Awards</h2>
+			<!--(If applicable. Include year)-->
+			<h3>Awards: Stainton Prize for Mathematics (Keble College, Oxford, 2015)</h3>
+			<!--Presentations:-->
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
+
+<script>
+$(window).resize(function(){_initi();});
+$(document).ready(function(){_initi();});
+
+function _initi(){
+	resize_content()
+	reorder_unselected()
+}
+function resize_content(){
+	if ($(window).width()<1200){$('#details, header').width(1200);$('html').css('overflow-x','scroll')}
+	else{$('#details, header').width('100%');$('html').css('overflow-x','hidden')}
+	
+	if ($(window).height()<700){$('#details').css('bottom','auto').css('height','640px');$('html').css('overflow-y','scroll')}
+	else{$('#details').css('height','auto').css('bottom',0);$('html').css('overflow-y','hidden')}
+	
+	var H=($('#details').height()-240)*0.8;
+	var W=$('#details').width()*0.6;
+	var T=0.125*H;
+	var L=W/3;
+	$('#content').css('height',0.8*H+'px').css('width',0.8*W+'px').css('padding',0.1*H+'px '+0.1*W+'px').css('top',T).css('left',L);
+	$('#content h2').css('margin-top',0);
+}
+
+function reorder_unselected()
+{
+	$('.unselected_detail').each(function(index, element) {
+		$(this).css('left',(index+1)*20+10+'%').css('bottom','40px').css('top','auto');
+    });
+	$('.selected_detail').css('left','50%').css('top','40px').css('bottom','auto');
+}
+
+finish=1
+
+$('#d1, #d2, #d3, #d4').mousedown(function(e) {
+	if (($(this).attr('class')=='unselected_detail'||$(this).attr('class')=='unselected_detail not_viewed') && finish==1){
+	    finish=0;
+		$('.selected_detail').css('border-radius','50%').css('opacity',0.6).switchClass('selected_detail','unselected_detail',1000,'linear');
+		$(this).removeClass('not_viewed').css('border-radius',0).css('opacity',0).switchClass('unselected_detail','selected_detail',1000,'linear',function(e){
+			_id=$(this).attr('id');
+			$('#content').empty();
+			$('#content').toggle('explode',function(e){
+				$('#'+_id+'>div').clone().appendTo('#content')
+				$('#content h3,#content p').css('visibility','visible').css('height','auto');
+				$('#content h2').css('margin','20px 0px').css('line-height','100%');	
+				$('#content').css('background-color',$('.selected_detail').css('background-color')).slideToggle(function(e){finish=1});
+				});
+				reorder_unselected();
+			});
+	}
+});
+$('#d1, #d2, #d3, #d4').mouseover(function(e) {
+	if ($(this).attr('class')=='unselected_detail'||$(this).attr('class')=='unselected_detail not_viewed'){
+		$(this).css('cursor','pointer');
+		$(this).mouseout(function(e){$(this).css('cursor','default');});
+	}
+});
+</script>
